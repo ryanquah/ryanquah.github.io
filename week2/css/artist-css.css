@@ -1,0 +1,40 @@
+body {
+    background: rgb(9, 99, 126);
+    color: rgb(235, 244, 246);
+}
+
+.image {
+    background-color: rgb(122, 178, 178);
+    border-radius: 10px;
+    padding: 13.5px 20px;
+    margin: 5px 375px;
+}
+
+.socials {
+    background-color: rgb(8, 131, 149);
+    border-radius: 60px;
+    padding: 5px 20px;
+    margin: 0px 633.5px;
+}
+
+.website {
+    background-color: rgb(122, 178, 178);
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin: 0px 690.5px;
+    border: 0px;
+}
+
+.name {
+    margin: 5px 687.9px;
+}
+
+.bio {
+    padding: 10px 35px;
+    margin: 7px 365.5px;
+}
+
+.divider {
+    background-color: rgb(235, 244, 246);
+    padding: 10px 10px;
+}
