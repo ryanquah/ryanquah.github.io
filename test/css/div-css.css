@@ -1,0 +1,28 @@
+div.london {
+    background-color: #FFF4A3;
+    flex: 5;
+
+}
+
+.oslo {
+    background-color: #FFC0C7;
+}
+
+.rome {
+    background-color: #D9EEE1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    max-width: 650px;
+    /* Set a maximum width for the container */
+    margin: auto;
+    /* Center the container horizontally */
+}
+
+.city {
+    padding: 20px;
+    flex: 1;
+}

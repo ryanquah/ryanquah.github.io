@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Long+Cang&family=New+Rocker&family=Playwrite+CA+Guides&display=swap');
+
+body {
+    background-color: black;
+    font-family: "Playwrite CA Guides", cursive;
+    ;
+    color: white;
+    font-size: 36px;
+    line-height: 1.2;
+    background-image: url("../images/strawberry.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-family: "New Rocker", cursive;
+    text-align: right;
+    margin: 0px;
+}
+
+h2 {
+    font-family: "Gloria Hallelujah", cursive;
+    margin: 0px;
+}
+
+h3 {
+    font-family: "Long Cang", cursive;
+    text-align: right;
+    padding: 100px;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px 6px #000000ad;
+
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    font-size: 70px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
