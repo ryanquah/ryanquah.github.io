@@ -14,7 +14,7 @@ body {
 div.top {
     display: flex;
     margin: auto;
-
+    margin-top: 20px;
     justify-content: space-between
 }
 
