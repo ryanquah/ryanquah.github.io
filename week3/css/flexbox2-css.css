@@ -5,9 +5,17 @@ body {
     background-color: white;
 }
 
+.wrap {
+    margin: auto;
+    width: 80%;
+}
+
 
 div.top {
     display: flex;
+    margin: auto;
+
+    justify-content: space-between
 }
 
 .positivus {
@@ -16,19 +24,17 @@ div.top {
 
 .logo {
     aspect-ratio: 4/1;
-    min-width: 140px;
+    min-width: 20%;
     flex: none;
     background-size: contain;
     background-position: center left;
     background-repeat: no-repeat;
-    margin: 40px;
 }
 
 .navigation {
     display: flex;
-    gap: 30px;
-    margin: auto;
-    margin-right: 40px
+    gap: 50px;
+
 }
 
 .border {
@@ -37,4 +43,97 @@ div.top {
     border-width: 2px;
     padding: 18px;
     margin: auto
+}
+
+div.bottom {
+    display: flex;
+    gap: 40px;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10%
+}
+
+.amazon {
+    background-image: url(../images/amazon.jpg);
+}
+
+.dribble {
+    background-image: url(../images/dribble.jpg);
+}
+
+.hubspot {
+    background-image: url(../images/hubspot.jpg);
+}
+
+.notion {
+    background-image: url(../images/notion.jpg);
+}
+
+.netflix {
+    background-image: url(../images/netflix.jpg);
+}
+
+.zoom {
+    background-image: url(../images/zoom.jpg);
+}
+
+.pic {
+    aspect-ratio: 4/1;
+    min-width: 140px;
+    flex: none;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+div.middle {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.bigtext {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    vertical-align: baseline;
+
+}
+
+.title {
+    font-size: 70px;
+}
+
+.side {
+    font-size: 24px;
+    margin: 0%
+}
+
+.button {
+    background-color: black;
+    border-radius: 15px;
+    padding: 18px 35px;
+    color: white;
+    width: max-content;
+    text-align: center;
+    margin: 50px 0px 0px 0px
+}
+
+.illustration {
+    background-image: url(../images/illustration.jpg);
+}
+
+.draw {
+    aspect-ratio: 1;
+    min-width: 140px;
+    flex: 1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
