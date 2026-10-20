@@ -1,0 +1,42 @@
+body {
+    background-color: aquamarine;
+}
+
+button {
+    display: block
+}
+
+.disppear {
+    display: none
+}
+
+.try {
+    display: inline
+}
+
+/* Tablet size (don't copy everything inside, only the things u want to change) */
+
+@media screen and (max-width: 750px) {
+    body {
+        background-color: purple;
+        color: green
+    }
+
+    p {
+        color: red
+    }
+
+}
+
+/* Mobile size*/
+
+@media screen and (max-width: 550px) {
+    body {
+        background-color: lightgreen;
+
+    }
+
+    p {
+        color: white
+    }
+}
