@@ -2,244 +2,120 @@
 
 body {
     font-family: "Space Grotesk", sans-serif;
-    background-color: white;
 }
 
 .wrap {
-    margin: auto;
     width: 80%;
-}
-
-
-div.top {
-    display: flex;
     margin: auto;
-    margin-top: 20px;
-    justify-content: space-between
 }
 
-.positivus {
-    background-image: url(../images/positivus.jpg);
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .logo {
-    aspect-ratio: 4/1;
-    min-width: 20%;
-    flex: none;
-    background-size: contain;
-    background-position: center left;
-    background-repeat: no-repeat;
+    width: 20%;
 }
 
 .navigation {
     display: flex;
     gap: 30px;
+}
+
+.navigation p {
+    margin: auto 0;
 
 }
 
 .border {
+    border: 2px solid black;
     border-radius: 15px;
-    border: black 2px solid;
-    border-width: 2px;
     padding: 18px;
-    margin: auto
 }
 
-div.bottom {
+.middle {
     display: flex;
-    gap: 40px;
-    margin: auto;
-    width: 100%;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 10%
-}
-
-.amazon {
-    background-image: url(../images/amazon.jpg);
-}
-
-.dribble {
-    background-image: url(../images/dribble.jpg);
-}
-
-.hubspot {
-    background-image: url(../images/hubspot.jpg);
-}
-
-.notion {
-    background-image: url(../images/notion.jpg);
-}
-
-.netflix {
-    background-image: url(../images/netflix.jpg);
-}
-
-.zoom {
-    background-image: url(../images/zoom.jpg);
-}
-
-.pic {
-    aspect-ratio: 4/1;
-    min-width: 160px;
-    flex: none;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-div.middle {
-    display: flex;
-    gap: 40px;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px
+    margin: 20px 0;
 }
 
 .bigtext {
-    width: 100%;
+    width: 45%;
 }
 
 .title {
-    font-size: 70px;
+    font-size: 56px;
 }
 
 .side {
-    font-size: 24px;
-    margin: 0%
+    font-size: 20px;
 }
 
 .button {
+    display: inline-block;
     background-color: black;
     border-radius: 15px;
     padding: 18px 35px;
     color: white;
-    width: max-content;
-    text-align: center;
-    margin: 50px 0px 0px 0px
 }
 
-
 .draw {
-    aspect-ratio: 1;
-    flex: 1;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 45%;
+    height: auto;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.pic {
+    height: auto;
+    flex-shrink: 0;
 }
 
 .hamburger {
     display: none;
 }
 
-/*Headings*/
-
-@media screen and (max-width: 1500px) {
-    .side {
-        font-size: 20px;
-    }
-
-    .title {
-        font-size: 60px;
-    }
-}
-
-@media screen and (max-width: 1286px) {
-
-
-    .title {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 1077px) {
-
-
-    .title {
-        font-size: 45px;
-    }
-
-    .side {
-        font-size: 17px;
-    }
-}
-
-/* Bottom logo bars*/
-
-@media screen and (max-width: 1312px) {
-    .bottom {
-
-        flex-direction: column;
-        max-width: 10%;
-        aspect-ratio: 4/1;
-    }
-}
-
-
-
-
-/* Tablet */
+/* Ipad dimension*/
 
 @media screen and (max-width: 1014px) {
-
-    .middle {
-        flex-direction: column-reverse;
-        width: 200%;
-        justify-content: center;
-        gap: 10px
-    }
-
-
-    .title,
-    .side,
-    .button {
-
-        vertical-align: none;
-    }
-
-    .title {
-        font-size: 40px;
-    }
-
-    .side {
-        font-size: 20px
-    }
-
     .navigation {
         display: none;
     }
 
     .hamburger {
         display: block;
-        background-image: url(../);
-
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
     }
 
-    .top {
-        justify-content: space-between;
+    .middle {
+        flex-direction: column-reverse;
     }
 
-    .logo {
-        min-width: 28%;
-    }
-
+    .bigtext,
     .draw {
-        background-position: center;
-        margin: 0px 80px
+        width: 100%;
     }
 
+    .title {
+        font-size: 40px;
+    }
 }
 
+/* Phone dimension*/
 
 @media screen and (max-width: 570px) {
-
-    .title,
-    .side {
-        min-width: 200%;
+    .wrap {
+        width: 90%;
     }
 
     .title {
@@ -247,10 +123,10 @@ div.middle {
     }
 
     .side {
-        font-size: 16px
+        font-size: 16px;
     }
 
-    .logo {
-        min-width: 35%;
+    .pic {
+        width: 45%;
     }
 }
