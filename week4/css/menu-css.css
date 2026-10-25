@@ -15,6 +15,7 @@ body {
 
     background-color: white;
     padding: 12px 24px;
+    justify-content: space-between;
 }
 
 
@@ -30,7 +31,9 @@ body {
 .text:hover {
     color: orangered;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
+
 
 .phone {
     font-weight: bold;
@@ -53,5 +56,31 @@ body {
 }
 
 .hamburger {
-    display: none
+    display: none;
+}
+
+/* Ipad */
+
+@media screen and (max-width: 900px) {
+
+    .middle,
+    .cbutton {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
+}
+
+/* Phone */
+
+@media screen and (max-width: 500px) {
+
+    .phone,
+    .picon {
+        display: none;
+
+    }
 }
