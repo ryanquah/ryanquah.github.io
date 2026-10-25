@@ -1,3 +1,57 @@
 body {
     background-color: beige;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu,
+.middle,
+.right {
+    display: flex;
+    align-items: center
+}
+
+.menu {
+
+    background-color: white;
+    padding: 12px 24px;
+}
+
+
+
+.middle {
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+    font-size: 15px;
+}
+
+
+.text:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.phone {
+    font-weight: bold;
+}
+
+.right img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+.cbutton {
+    background-color: orangered;
+    color: white;
+    border: 0;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin: 0px 0px 0px 25px;
+}
+
+.hamburger {
+    display: none
 }
