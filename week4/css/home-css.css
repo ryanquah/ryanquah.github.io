@@ -86,6 +86,135 @@ body {
     display: none;
 }
 
+
+
+
+/* Services */
+
+.serviceboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+/* Individual boxes */
+
+.servicebox {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 40%;
+    padding: 24px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px black;
+    min-height: 220px;
+    padding-bottom: 18px;
+}
+
+.servicebox .servicet {
+    max-width: 40%;
+    font-size: 22px;
+}
+
+.servicehead {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+.servicehead p {
+    max-width: 450px;
+}
+
+.serviceheadtext {
+    background-color: #B9FF66;
+    border-radius: 4px;
+    padding: 2px;
+    idth: 45%;
+}
+
+.servicet {
+    border-radius: 4px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.greenlabel {
+    background-color: #B9FF66;
+    color: black
+}
+
+.whitelabel {
+    background-color: white;
+    color: black;
+}
+
+.IllustrationS {
+
+    height: auto;
+}
+
+
+.learnm {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.grey {
+    background-color: #F3F3F3;
+}
+
+.green {
+    background-color: #B9FF66;
+}
+
+.black {
+    background-color: #191A23;
+    color: white
+}
+
+.servicehead {
+    gap: 30px;
+    margin: 40px 0;
+}
+
+
+.servicebox .servicet {
+    max-width: 40%;
+    font-size: 20px;
+}
+
+.IllustrationS {
+    width: 45%;
+    height: auto;
+}
+
+.call {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+.calltext {
+    width: 50%;
+}
+
+.callimage {
+
+    height: auto;
+}
+
 /* Ipad dimension*/
 
 @media screen and (max-width: 1014px) {
@@ -111,6 +240,33 @@ body {
     }
 }
 
+@media screen and (max-width: 980px) {
+    .callimage {
+        display: none;
+        justify-content: center;
+    }
+
+    .call {
+        justify-content: center;
+    }
+
+    .calltext {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .servicebox {
+        width: 80%;
+        margin: auto;
+    }
+
+    .servicebox .servicet {
+        font-size: 23px;
+    }
+}
+
 /* Phone dimension*/
 
 @media screen and (max-width: 570px) {
@@ -127,16 +283,57 @@ body {
     }
 
     .pic {
-        width: 40%;
 
+        width: 40%;
+        height: auto;
     }
 
-}
+    /* Service Boxes */
 
-/* Services */
+    .servicebox {
+        width: 80%;
+    }
 
-.servicebox {
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 24px;
+    .learnmore {
+        display: none;
+    }
+
+    .servicebox {
+        width: 80%;
+    }
+
+    .servicebox .servicet {
+        max-width: 45%;
+        font-size: 16px;
+    }
+
+    .IllustrationS {
+        width: 40%;
+    }
+
+    .call {
+        padding: 20px;
+    }
+
+    .calltext {
+        width: 100%;
+    }
+
+    .callimage {
+        display: none;
+    }
+
+    .servicebox .servicet {
+        max-width: 40%;
+        font-size: 20px;
+    }
+
+    .IllustrationS {
+        width: 50%;
+        height: auto;
+    }
+
+    .arrow {
+        width: 12%
+    }
 }
