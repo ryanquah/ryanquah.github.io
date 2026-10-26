@@ -1,3 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 body {
-    background-color: purple;
+    margin: 0
+}
+
+.header {
+    background-color: #84A282;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px 10px
+}
+
+.content {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+
+}
+
+.profilepic {
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0px auto;
+}
+
+.name {
+    font-family: "Homemade Apple", cursive;
+    font-size: 30px;
+}
+
+
+.webpub {
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.desc {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+.textchunk {
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.weeklyexlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px
+}
+
+.weekex {
+    background-color: #fefaf39d;
+    width: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 12px rgba(50, 70, 50, 0.2);
+}
+
+.weekhead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid black;
+    margin-bottom: 12px;
+    padding-bottom: 0px;
+}
+
+
+.weeklyexes {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    margin: 8px 0px;
+}
+
+
+.footer {
+    background-color: #F6E2E9;
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
+}
+
+.footerb {
+    margin: 0px
 }
