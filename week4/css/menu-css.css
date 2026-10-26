@@ -35,6 +35,16 @@ body {
 }
 
 
+.service {
+    color: orangered
+}
+
+.service:hover {
+    color: rgb(166, 22, 0);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
 .phone {
     font-weight: bold;
 }
