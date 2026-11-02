@@ -1,0 +1,91 @@
+/* === FONTS USED === */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* === BOX SIZING === */
+
+* {
+    box-sizing: border-box;
+    /* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements. */
+}
+
+
+/* === ROOT VARIABLES === */
+:root {
+    --primary: black;
+    --secondary: white;
+    --navbar: #333333;
+    --text-nohover: #A1A1A1;
+    --text-hover: #BDA16B;
+    --text-light: #777;
+    --bg-light: #f9f9f9;
+    --radius: 8px;
+    --font-base: "Lora", serif;
+    --button-color: #BDA16B;
+    --button-outline: #D3D3D3;
+    --button-seccolor: #FFFFFF;
+}
+
+
+/* === RESET / NORMALIZE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-base);
+
+}
+
+.heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 95px;
+}
+
+.subheading {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    font-size: 15px
+}
+
+.paragraph {
+    font-size: 19px;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* can be a link itself also instead of button */
+
+.button {
+    background-color: var(--button-color);
+    color: var(--button-seccolor);
+    display: inline-block;
+    border: none;
+    text-align: center;
+    padding: 5px 15px
+}
+
+.button:hover {
+    background-color: #fad58b;
+    transition: 0.3s ease-in-out;
+
+}
+
+.bu-blackoutline {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
