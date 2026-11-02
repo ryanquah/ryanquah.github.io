@@ -1,46 +1,157 @@
-/* multiple different button styles, so change accordingly and check */
-
-/* make it look pretty and the text is readable */
-
-/* the figma may not actually be UX friendly, so change accordingly */
-
-/* can tune the pictures in photoshop if needed */
-
-
-/* no more reservation its now promotions */
-
-/* check how many fonts and styles urself, u cant entirely depend on the style guide */
-
 .nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 24px 10%;
+    color: var(--secondary);
+    gap: 24px;
+    background-color: var(--primary);
 }
+
+.nav .Logo {
+    width: 150px;
+    margin-right: auto;
+}
+
+.navbutton {
+    color: var(--text-nohover);
+    font-size: 13px;
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbutton:hover {
+    color: var(--text-hover);
+}
+
+.hero {
+    min-height: 620px;
+    padding: 155px 10% 80px;
+    color: white;
+    background: black url("../images/home/home-header.jpg") right center / 56% auto no-repeat;
+}
+
+.hero .heading {
+    max-width: 400px;
+    font-size: 72px;
+    line-height: 1;
+}
+
+.hero .paragraph {
+    max-width: 380px;
+    line-height: 1.6;
+    margin: 30px 0;
+}
+
+.divider {
+    width: 40px;
+    margin: 10px auto 30px;
+    border: 0;
+    border-top: 1px solid #d3d3d3;
+}
+
+.popular {
+    padding: 60px 20px 30px;
+    text-align: center;
+    background: white;
+}
+
+.populartitle {
+    font-family: var(--font-base);
+    font-style: italic;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.phonetitle {
+    display: none;
+}
+
 
 .foodpics {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 8% 70px;
 }
 
 .food {
+    flex: 1 1 0;
+    max-width: 240px;
     text-align: center;
 }
 
+.food.middle {
+    max-width: 360px;
+}
+
+.food img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.food.middle img {
+    aspect-ratio: 4 / 5;
+}
+
+.food .heading {
+    font-size: 24px;
+    margin: 16px 0 10px;
+}
+
+.food .button {
+    margin-top: 6px;
+}
+
 .atmosphere {
-    background: url("../images/home/home-banner.jpg");
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../images/home/home-banner.jpg") center / cover no-repeat;
     color: var(--secondary);
+    min-height: 500px;
+    padding: 110px 10%;
+}
+
+.atmospherehead {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.atmosphere p {
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.footer .Logo {
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    max-width: 550px;
+    line-height: 1.6;
 }
 
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url("../images/home/home-footer.png");
-    background-position: center;
-    background-size: fill;
+    min-height: 280px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary) 50%;
-    color: var(--secondary);
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    text-align: center;
+    color: white;
+    background:
+        linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        url("../images/home/home-footer.png") center / cover no-repeat;
 }
 
 .socials {
@@ -48,4 +159,10 @@
     justify-content: center;
     gap: 16px;
     margin-top: 30px;
+}
+
+.socials img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }

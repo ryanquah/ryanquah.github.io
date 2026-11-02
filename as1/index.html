@@ -12,56 +12,77 @@
 <body>
     <div class="nav">
         <img src="images/home/Romalia.svg" alt="Logo" class="Logo">
-        <p class="navbutton"> Home </p>
-        <p class="navbutton"> Menu </p>
-        <p class="navbutton"> Order </p>
-        <p class="navbutton"> Promotion </p>
-        <p class="navbutton"> About Us </p>
-        <p class="navbutton"> Our restaurant </p>
+        <p class="subheading navbutton"> Home </p>
+        <p class="subheading navbutton"> Menu </p>
+        <p class="subheading navbutton"> Order </p>
+        <p class="subheading navbutton"> Promotion </p>
+        <p class="subheading navbutton"> About Us </p>
+        <p class="subheading navbutton"> Our restaurant </p>
+        <img src="images/shopping-basketw.svg" alt="Basket" class="subheading navbutton" width="20">
+        <img src="images/hamburgermenu.svg" alt="Basket" class="hamburger navbutton" width="20">
     </div>
 
     <div class="hero">
         <h2 class="subheading"> WELCOME TO OUR DELICIOUS CORNER </h2>
-        <h1 class="heading"> Romaliya RESTAURANT</h1>
+        <h1 class="heading foodheading"> Romaliya RESTAURANT</h1>
         <p class="paragraph"> We have a proper passion for cooking. Love is the secret ingredient that makes all
             our
             meals taste better and magical.</p>
-        <button class="button"> view more </button>
-        <button class="button bu-blackoutline"> view more </button>
+
 
     </div>
 
-    <div class="popular"></div>
-    <p class="populartitle">Simple.Fresh.Honest </p>
-    <h1 class="heading"> POPULAR</h1>
-    <p> Our menu celebrates natural, honest ingredients, prepared fresh every day. And at the heart of it all is the
-        bread that brings everything together. </p>
+    <div class="popular">
+        <p class="populartitle">Simple.Fresh.Honest </p>
+        <div class="phonetitle">
+            <p> Simple </p>
+            <p> Fresh </p>
+            <p> Honest </p>
+        </div>
+        <hr class="divider">
+        <h1 class="heading"> POPULAR</h1>
+        <p> Our menu celebrates natural, honest ingredients, prepared fresh every day. And at the heart of it all is the
+            bread that brings everything together. </p>
+    </div>
     <div class="foodpics">
         <div class="food left">
 
-            <img src="images/home/home-food1.jpg" alt="Dessert" class="Dessert">
-            <h1 class="heading"> DESSERT </h1>
+            <picture>
+                <source media="(max-width: 640px)" srcset="images/home/phone-food1.png">
+                <source media="(max-width: 1024px)" srcset="images/home/ipad-food1.png">
+                <img src="images/home/home-food1.jpg" alt="Dessert" class="Dessert">
+            </picture>
+            <h1 class="heading foodheading"> DESSERT </h1>
             <button class="button bu-blackoutline"> VIEW MORE </button>
         </div>
         <div class="food middle">
 
-            <img src="images/home/home-food3.jpg" alt="Chef Special" class="Chef Specials">
-            <h1 class="heading"> Chef Specials</h1>
+            <picture>
+                <source media="(max-width: 640px)" srcset="images/home/phone-food.png">
+                <source media="(max-width: 1024px)" srcset="images/home/ipad-food.png">
+                <img src="images/home/home-food3.jpg" alt="Chef special" class="Chef Specials">
+            </picture>
+            <h1 class="heading foodheading"> Chef Specials</h1>
             <button class="button bu-blackoutline"> VIEW MORE </button>
         </div>
         <div class="food right">
 
-            <img src="images/home/home-food1.jpg" alt="Dessert" class="Dessert">
-            <h1 class="heading"> SEASONAL </h1>
+            <picture>
+                <source media="(max-width: 640px)" srcset="images/home/phone-food2.png">
+                <source media="(max-width: 1024px)" srcset="images/home/ipad-food2.png">
+                <img src="images/home/home-food2.jpg" alt="Seasonal dessert" class="Dessert">
+            </picture>
+            <h1 class="heading foodheading"> SEASONAL </h1>
             <button class="button bu-blackoutline"> VIEW MORE </button>
         </div>
     </div>
 
     <div class="atmosphere">
-        <h1 class="heading"> ATMOSPHERE </h1>
-        <P> Step into a warm and elegant space where exceptional cuisine, refined service, and a relaxing atmosphere
+        <h1 class="heading atmospherehead"> ATMOSPHERE </h1>
+        <p> Step into a warm and elegant space where exceptional cuisine, refined service, and a
+            relaxing atmosphere
             come
-            together to create an unforgettable dining experience. </P>
+            together to create an unforgettable dining experience. </p>
     </div>
 
 
@@ -76,10 +97,13 @@
         </p>
 
         <div class="socials">
-            <img src="images/Facebook.png" alt="Facebook" class="Facebook">
-            <img src="images/Twitter.png" alt="Twitter" class="Twitter">
-            <img src="images/Instagram.png" alt="Instagram" class="Instagram">
-            <img src="images/Youtube.png" alt="Youtube" class="Youtube">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/Facebook.png" alt="Facebook"
+                    class="Facebook"></a>
+            <a href="https://www.x.com" target="_blank"><img src="images/Twitter.png" alt="Twitter" class="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"
+                    class="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="images/Youtube.png" alt="Youtube"
+                    class="Youtube"> </a>
         </div>
     </div>
 </body>

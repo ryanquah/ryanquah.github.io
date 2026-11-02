@@ -16,7 +16,7 @@
     --primary: black;
     --secondary: white;
     --navbar: #333333;
-    --text-nohover: #A1A1A1;
+    --text-nohover: #a1a1a1;
     --text-hover: #BDA16B;
     --text-light: #777;
     --bg-light: #f9f9f9;
@@ -42,7 +42,6 @@ body {
 
 .heading {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 95px;
 }
 
 .subheading {
@@ -89,3 +88,17 @@ a {
     color: black;
     border: 1px solid black;
 }
+
+
+/* multiple different button styles, so change accordingly and check */
+
+/* make it look pretty and the text is readable */
+
+/* the figma may not actually be UX friendly, so change accordingly */
+
+/* can tune the pictures in photoshop if needed */
+
+
+/* no more reservation its now promotions */
+
+/* check how many fonts and styles urself, u cant entirely depend on the style guide */
