@@ -166,3 +166,171 @@
     height: 48px;
     object-fit: contain;
 }
+
+@media (max-width: 1024px) {
+    .nav {
+        padding: 20px 6%;
+        gap: 16px;
+    }
+
+    .navbutton {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .Logo {
+        width: 125px;
+    }
+
+    .hero {
+        min-height: 0;
+        padding: 103vw 16% 55px;
+        background: black url("../images/Home/home-header.jpg") center top / 100% auto no-repeat;
+    }
+
+    .hero .heading {
+        font-size: 60px;
+    }
+
+    .foodpics {
+        flex-direction: column;
+        gap: 0;
+        align-items: stretch;
+        padding: 0 0 55px;
+    }
+
+    .food,
+    .food.middle {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 0;
+        padding-bottom: 28px;
+    }
+
+    .food.middle {
+        order: 1;
+    }
+
+    .food.left {
+        order: 2;
+    }
+
+    .food.right {
+        order: 3;
+    }
+
+    .food img,
+    .food.middle img {
+        height: auto;
+        aspect-ratio: auto;
+    }
+
+    .food.middle img {
+        aspect-ratio: 16 / 9;
+    }
+
+    .atmosphere {
+        padding: 90px 8%;
+    }
+
+    .footer {
+        min-height: 260px;
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav {
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 5%;
+    }
+
+    .navbutton {
+        display: none;
+    }
+
+    .Logo {
+        width: 110px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero {
+        min-height: 0;
+        padding: 105vw 8% 55px;
+        background: black url("../images/Home/home-header.jpg") center top / 100% auto no-repeat;
+    }
+
+    .heading {
+        font-size: 48px;
+    }
+
+    .paragraph {
+        margin: 20px 0 0;
+        font-size: 13px;
+    }
+
+    .popular {
+        padding: 45px 8% 20px;
+    }
+
+    .populartitle {
+        font-size: 24px;
+    }
+
+    .foodpics {
+        padding-top: 20px;
+    }
+
+    .food,
+    .food.middle {
+        flex: none;
+        max-width: none;
+    }
+
+    .food img,
+    .food.middle img {
+        aspect-ratio: auto;
+    }
+
+    .populartitle {
+        display: none;
+    }
+
+    .phonetitle {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .phonetitle p {
+        font-style: italic;
+        line-height: 1.15;
+        font-size: 30px;
+    }
+
+    .atmosphere {
+        min-height: 420px;
+        padding: 75px 8%;
+        background-position: center;
+    }
+
+    .footer {
+        min-height: 320px;
+        padding: 50px 8%;
+    }
+
+    .socials {
+        gap: 12px;
+    }
+
+    .socials img {
+        width: 42px;
+        height: 42px;
+    }
+}
