@@ -167,6 +167,8 @@
     object-fit: contain;
 }
 
+/* IPAD Demension */
+
 @media (max-width: 1024px) {
     .nav {
         padding: 20px 6%;
@@ -241,6 +243,8 @@
         padding: 40px 20px;
     }
 }
+
+/* PHONE Demension */
 
 @media (max-width: 640px) {
     .nav {

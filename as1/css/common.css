@@ -16,17 +16,23 @@
     --primary: black;
     --secondary: white;
     --navbar: #333333;
+    --text-secondary: white;
     --text-nohover: #a1a1a1;
     --text-hover: #BDA16B;
     --text-light: #777;
     --bg-light: #f9f9f9;
     --radius: 8px;
     --font-base: "Lora", serif;
-    --button-color: #BDA16B;
+    --font-heading: "Bebas Neue", sans-serif;
+    --font-paragraph: "Work Sans", sans-serif;
+    --button-bgcolor: #BDA16B;
     --button-outline: #D3D3D3;
     --button-seccolor: #FFFFFF;
 }
 
+/* use more --btn, --bg, --font, --heading .... */
+
+/* can be more clear and more organized please redo and try something new */
 
 /* === RESET / NORMALIZE === */
 * {
@@ -88,6 +94,10 @@ a {
     color: black;
     border: 1px solid black;
 }
+
+/*  padding can be fit for the text, and more use of the common css thats it */
+
+/* responsive design also need to change here so no need to do at every css */
 
 
 /* multiple different button styles, so change accordingly and check */
