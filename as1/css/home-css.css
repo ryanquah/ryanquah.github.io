@@ -1,34 +1,3 @@
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 24px 10%;
-    color: var(--secondary);
-    gap: 24px;
-    background-color: var(--primary);
-}
-
-.nav .Logo {
-    width: 150px;
-    margin-right: auto;
-}
-
-.navbutton {
-    color: var(--text-nohover);
-    font-size: 13px;
-    cursor: pointer;
-    transition: color 0.25s ease;
-}
-
-.hamburger {
-    display: none;
-}
-
-.navbutton:hover {
-    color: var(--text-hover);
-}
-
 .hero {
     min-height: 620px;
     padding: 155px 10% 80px;
@@ -38,8 +7,8 @@
 
 .hero .heading {
     max-width: 400px;
-    font-size: 72px;
-    line-height: 1;
+    font-size: 88px;
+    line-height: 1.4;
 }
 
 .hero .paragraph {
@@ -62,7 +31,7 @@
 }
 
 .populartitle {
-    font-family: var(--font-base);
+    font-family: var(--font-body);
     font-style: italic;
     text-align: center;
     font-size: 40px;
@@ -115,7 +84,7 @@
     background:
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url("../images/home/home-banner.jpg") center / cover no-repeat;
-    color: var(--secondary);
+    color: var(--text-color-inverse);
     min-height: 500px;
     padding: 110px 10%;
 }
@@ -130,62 +99,11 @@
     line-height: 1.6;
 }
 
-.footer .Logo {
-    width: 160px;
-    margin-bottom: 20px;
-}
 
-.footer p {
-    max-width: 550px;
-    line-height: 1.6;
-}
+/* IPAD Dimension */
 
-.footer {
-    min-height: 280px;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background:
-        linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-        url("../images/home/home-footer.png") center / cover no-repeat;
-}
-
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 30px;
-}
-
-.socials img {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-}
-
-/* IPAD Demension */
 
 @media (max-width: 1024px) {
-    .nav {
-        padding: 20px 6%;
-        gap: 16px;
-    }
-
-    .navbutton {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .Logo {
-        width: 125px;
-    }
 
     .hero {
         min-height: 0;
@@ -238,32 +156,11 @@
         padding: 90px 8%;
     }
 
-    .footer {
-        min-height: 260px;
-        padding: 40px 20px;
-    }
 }
 
-/* PHONE Demension */
+/* PHONE Dimension */
 
 @media (max-width: 640px) {
-    .nav {
-        justify-content: space-between;
-        gap: 16px;
-        padding: 16px 5%;
-    }
-
-    .navbutton {
-        display: none;
-    }
-
-    .Logo {
-        width: 110px;
-    }
-
-    .hamburger {
-        display: block;
-    }
 
     .hero {
         min-height: 0;
@@ -324,17 +221,5 @@
         background-position: center;
     }
 
-    .footer {
-        min-height: 320px;
-        padding: 50px 8%;
-    }
 
-    .socials {
-        gap: 12px;
-    }
-
-    .socials img {
-        width: 42px;
-        height: 42px;
-    }
 }

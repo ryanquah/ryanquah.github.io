@@ -1,0 +1,214 @@
+.hero {
+    min-height: 620px;
+    padding: 155px 10% 80px;
+    color: var(--text-color-inverse);
+    background: black url("../images/ourrest/our-header.png") right center / auto 100% no-repeat;
+}
+
+.hero .heading {
+    font-size: 64px;
+    line-height: 1;
+    max-width: 380px;
+    margin: 20px 0 30px;
+}
+
+.hero .text {
+    max-width: 380px;
+}
+
+.restaurant-middle {
+    padding: 55px 8% 65px;
+    text-align: center;
+}
+
+.middleheading {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.detail-pics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7%;
+    margin-bottom: 65px;
+}
+
+.ipadpics {
+    display: none;
+}
+
+.detail-ipad {
+    display: block;
+    width: 85%;
+}
+
+.gallery p {
+    max-width: 650px;
+    margin: -15px auto 28px;
+    line-height: 1.6;
+}
+
+.gallery-images img {
+    width: 100%;
+}
+
+.gallery-tablet,
+.gallery-phone {
+    display: none;
+}
+
+.gallery-images {
+    width: 100%;
+}
+
+.reviews {
+    padding: 60px 8% 70px;
+    text-align: center;
+}
+
+.reviews-title {
+    margin-bottom: 30px;
+}
+
+.review {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-inverse);
+    padding: 32px 24px;
+    text-align: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.review .name {
+    margin-bottom: 18px;
+}
+
+.review p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* === IPAD DIMENSION === */
+
+@media (max-width: 1480px) {
+    .hero {
+        min-height: 360px;
+        padding: 55px 8%;
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("../images/ourrest/our-header.png") center / cover no-repeat;
+    }
+
+    .hero .heading {
+        max-width: 520px;
+        font-size: 52px;
+        margin: 14px 0 18px;
+    }
+
+    .hero .text {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+
+    .detail-pics {
+        display: none;
+    }
+
+    .ipadpics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .detail-ipad {
+        width: 85%;
+    }
+
+    .gallery-desktop,
+    .gallery-phone {
+        display: none;
+    }
+
+    .gallery-tablet {
+        display: block;
+    }
+
+    .reviews {
+        padding: 40px 8%;
+    }
+
+    .rating {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .stars {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        min-height: 340px;
+        padding: 50px 8%;
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+            url("../images/ourrest/our-header.png") center / cover no-repeat;
+    }
+
+    .hero .heading.text {
+        max-width: 310px;
+        font-size: 40px;
+        margin: 12px 0 16px;
+    }
+
+    .hero .text {
+        max-width: 310px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .restaurant-middle {
+        padding: 35px 5% 45px;
+    }
+
+    .middleheading {
+        font-size: 30px;
+        margin-bottom: 22px;
+    }
+
+    .ipadpics {
+        gap: 16px;
+    }
+
+    .gallery-desktop,
+    .gallery-tablet {
+        display: none;
+    }
+
+    .gallery-phone {
+        display: block;
+    }
+
+
+}

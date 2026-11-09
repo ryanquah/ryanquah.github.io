@@ -1,0 +1,6 @@
+.hero {
+    min-height: 620px;
+    padding: 155px 10% 80px;
+    color: white;
+    background: black url("../images/promotion/promotion-header.jpg") left center / 56% auto no-repeat;
+}

@@ -1,66 +1,86 @@
-/* === FONTS USED === */
-
+/* === FONTS USED ACROSS THE WEBSITE === */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 /* === BOX SIZING === */
-
+/* Makes padding and borders count as part of an element's set width and height. */
 * {
     box-sizing: border-box;
-    /* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements. */
 }
 
 
 /* === ROOT VARIABLES === */
+/* Reuse these values with var(--name), e.g. color: var(--accent-color); */
 :root {
-    --primary: black;
-    --secondary: white;
-    --navbar: #333333;
-    --text-secondary: white;
-    --text-nohover: #a1a1a1;
-    --text-hover: #BDA16B;
-    --text-light: #777;
-    --bg-light: #f9f9f9;
-    --radius: 8px;
-    --font-base: "Lora", serif;
+    /* Text colors */
+    --text-color: #000000;
+    --text-color-inverse: #ffffff;
+    --text-color-muted: #a1a1a1;
+    --text-color-subtle: #777777;
+
+    /* Background colors */
+    --background-color: #ffffff;
+    --background-color-muted: #f9f9f9;
+    --background-color-dark: #000000;
+    --background-color-navbar: #333333;
+    --background-color-dishes: #333333;
+
+    /* Button colors */
+    --button-background-color: var(--accent-color);
+    --button-background-color-hover: #fad58b;
+    --button-background-color-dark: #000000;
+    --button-text-color: #ffffff;
+    --button-text-color-dark: #000000;
+    --button-outline-color: #000000;
+    --button-outline-color-light: #A1A1A1;
+
+    /* Brand and border colors */
+    --accent-color: #BDA16B;
+    --border-color: #D3D3D3;
+    --star-color: #BDA16B;
+
+
+    --font-body: "Lora", serif;
     --font-heading: "Bebas Neue", sans-serif;
-    --font-paragraph: "Work Sans", sans-serif;
-    --button-bgcolor: #BDA16B;
-    --button-outline: #D3D3D3;
-    --button-seccolor: #FFFFFF;
+    --font-ui: "Work Sans", sans-serif;
+    --font-subheading: "Work Sans", sans-serif;
+    --font-size-body: 19px;
+    --font-size-subheading: 15px;
+    --font-weight-light: 300;
+
+    --radius-small: 8px;
 }
 
-/* use more --btn, --bg, --font, --heading .... */
-
-/* can be more clear and more organized please redo and try something new */
-
-/* === RESET / NORMALIZE === */
+/* === BASIC PAGE RESET === */
+/* Removes browser-default spacing so each page starts consistently. */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+/* === SHARED TEXT STYLES === */
 body {
-    font-family: var(--font-base);
-
+    font-family: var(--font-body);
+    color: var(--text-color);
 }
 
 .heading {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: var(--font-heading);
+    font-weight: 100
 }
 
 .subheading {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 300;
-    font-size: 15px
+    font-family: var(--font-ui);
+    font-weight: var(--font-weight-light);
+    font-size: var(--font-size-subheading);
 }
 
 .paragraph {
-    font-size: 19px;
+    font-size: var(--font-size-body);
 }
 
-
+/* === SHARED IMAGE AND LINK STYLES === */
 img {
     max-width: 100%;
     display: block;
@@ -71,44 +91,169 @@ a {
     color: inherit;
 }
 
+.star {
+    color: var(--star-color);
+}
 
-/* can be a link itself also instead of button */
-
+/* === SHARED BUTTON STYLES === */
 .button {
-    background-color: var(--button-color);
-    color: var(--button-seccolor);
     display: inline-block;
+    padding: 5px 15px;
     border: none;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
     text-align: center;
-    padding: 5px 15px
+    transition: background-color 0.3s ease-in-out;
+    font-family: var(--font-ui);
 }
 
 .button:hover {
-    background-color: #fad58b;
-    transition: 0.3s ease-in-out;
-
+    background-color: var(--button-background-color-hover);
 }
 
-.bu-blackoutline {
+.button-blackoutline {
     background-color: transparent;
-    color: black;
-    border: 1px solid black;
+    color: var(--text-color);
+    border: 1px solid var(--button-outline-color);
+    font-family: var(--font-ui);
 }
 
-/*  padding can be fit for the text, and more use of the common css thats it */
+.button-whiteoutline {
+    background-color: transparent;
+    color: var(--button-text-color);
+    border: 1px solid var(--button-outline-color-light);
+    font-family: var(--font-ui);
+}
 
-/* responsive design also need to change here so no need to do at every css */
+/* === SHARED NAVIGATION & FOOTER === */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 24px 10%;
+    color: var(--text-color-inverse);
+    gap: 24px;
+    background-color: var(--background-color-dark);
+}
+
+.nav .Logo {
+    width: 150px;
+    margin-right: auto;
+}
+
+.navbutton {
+    color: var(--text-color-muted);
+    font-size: 13px;
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbutton:hover {
+    color: var(--accent-color);
+}
 
 
-/* multiple different button styles, so change accordingly and check */
+.footer .Logo {
+    width: 160px;
+    margin-bottom: 20px;
+}
 
-/* make it look pretty and the text is readable */
+.footer p {
+    max-width: 550px;
+    line-height: 1.6;
+}
 
-/* the figma may not actually be UX friendly, so change accordingly */
+.footer {
+    min-height: 280px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color-inverse);
+    background:
+        linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        url("../images/home/home-footer.png") center / cover no-repeat;
+}
 
-/* can tune the pictures in photoshop if needed */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
 
+.socials img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
 
-/* no more reservation its now promotions */
+/* IPAD Dimension */
 
-/* check how many fonts and styles urself, u cant entirely depend on the style guide */
+@media (max-width: 1024px) {
+    .nav {
+        padding: 20px 6%;
+        gap: 16px;
+    }
+
+    .navbutton {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .Logo {
+        width: 125px;
+    }
+
+    .footer {
+        min-height: 260px;
+        padding: 40px 20px;
+    }
+}
+
+/* PHONE Dimension */
+
+@media (max-width: 640px) {
+    .nav {
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 5%;
+    }
+
+    .navbutton {
+        display: none;
+    }
+
+    .Logo {
+        width: 110px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .footer {
+        min-height: 320px;
+        padding: 50px 8%;
+    }
+
+    .socials {
+        gap: 12px;
+    }
+
+    .socials img {
+        width: 42px;
+        height: 42px;
+    }
+}

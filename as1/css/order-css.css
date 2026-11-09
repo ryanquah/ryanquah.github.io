@@ -1,0 +1,350 @@
+/* === TOP SECTION === */
+.order-hero {
+    min-height: 360px;
+    padding: 70px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color-inverse);
+    background: var(--background-color-dark) url("../images/order/header.jpg") center / cover no-repeat;
+}
+
+.order-hero .heading {
+    font-size: 48px;
+    margin-top: 12px;
+}
+
+.choose {
+    padding: 42px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.choose .heading {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.choose .viewcart {
+    line-height: 1.5;
+    padding: 8px 16px;
+}
+
+
+/* === FAVOURITES === */
+.favourites {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-inverse);
+    padding: 48px 8%;
+}
+
+.favourites-label,
+.favourites-title {
+    text-align: left;
+}
+
+.favourites-label {
+    margin-bottom: 10px;
+}
+
+.favourites-title {
+    font-size: 36px;
+    margin-bottom: 28px;
+}
+
+/* === DISHES === */
+
+.dishes {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.dish {
+    flex: 1;
+    min-width: 0;
+    background-color: var(--background-color-dishes);
+    color: var(--text-color-inverse);
+}
+
+.dish img {
+    width: 100%;
+    height: auto;
+}
+
+.dishtext {
+    padding: 24px 16px;
+    min-height: 280px;
+    line-height: 1.6;
+
+}
+
+.dishtext h2,
+.dishtext h1,
+.dishtext p,
+.dishtext .ctabutton {
+    margin-bottom: 12px;
+}
+
+.dishtext .heading {
+    font-size: 22px;
+}
+
+.dish-p {
+    max-width: 100%;
+}
+
+.dish .price {
+    color: var(--accent-color);
+    margin-top: 14px;
+}
+
+
+/* === BUTTONS === */
+
+.ctabutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    height: 44px;
+    flex: 0 0 90px;
+}
+
+.quantity button,
+.quantity p {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.addtocart,
+.viewcart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 6px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.addtocart p,
+.viewcart p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.ctabuttonbottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.addtocart {
+    flex: 1;
+}
+
+.viewcart {
+    flex: 1;
+}
+
+.ctabutton .addtocart,
+.ctabutton .viewcart,
+.ctabuttonbottom .addtocart,
+.ctabuttonbottom .viewcart {
+    height: 44px;
+}
+
+.ctabuttonbottom .quantity {
+    flex: 0 0 44px;
+    width: 100%;
+}
+
+.ctabuttonbottom .addtocart,
+.ctabuttonbottom .viewcart {
+    flex: 0 0 44px;
+    width: 100%;
+}
+
+/* === Twice cooked pork === */
+
+.pork {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin: 40px 8%;
+    color: var(--text-color-inverse);
+    background-color: var(--background-color-dark);
+}
+
+.pork img {
+    width: 50%;
+    display: block;
+}
+
+.porktext {
+    width: 50%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color-dark);
+    line-height: 1.6;
+}
+
+.porktext > h1,
+.porktext > p {
+    margin: 12px 0;
+}
+
+.porktext h1 {
+    font-size: 28px;
+}
+
+.porkbuy {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.porkbuy .quantity {
+    flex: 0 0 112px;
+    height: 56px;
+}
+
+.porkbuy .addtocart {
+    height: 56px;
+}
+
+.checkout {
+    padding: 55px 10%;
+    text-align: center;
+    background-color: var(--background-color-dark);
+    color: var(--text-color-inverse);
+}
+
+.checkout .heading {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.checkout p {
+    margin-bottom: 20px;
+}
+
+.checkout .addtocart {
+    display: inline-flex;
+    flex: 0 0 auto;
+    padding: 6px 12px;
+    font-size: 9px;
+}
+
+.checkout .addtocart p {
+    margin: 0;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* === RESPONSIVE LAYOUT === */
+
+@media (max-width: 1010px) {}
+
+/* Phone Dimension */
+
+@media (max-width: 980px) {
+    .choose {
+        padding: 30px 8%;
+        align-items: flex-start;
+        flex-direction: column;
+
+    }
+
+
+    .bottom .dish {
+        flex-basis: 100%;
+    }
+
+    .bottom {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bottom .dish {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 640px) {
+    .order-hero {
+        min-height: 280px;
+        padding: 50px 8%;
+    }
+
+    .order-hero .heading {
+        font-size: 38px;
+    }
+
+
+
+    .dishes {
+        flex-direction: column;
+    }
+
+    .dish {
+        margin: 0;
+    }
+
+    .dishtext {
+        padding: 20px;
+    }
+
+    .ctabutton {
+        gap: 6px;
+    }
+
+    .pork {
+        flex-direction: column;
+        margin: 30px 8%;
+    }
+
+    .pork img,
+    .porktext {
+        width: 100%;
+    }
+
+    .porktext {
+        padding: 24px 20px;
+    }
+
+    .porkbuy {
+        flex-wrap: wrap;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+}
