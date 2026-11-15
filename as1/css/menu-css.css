@@ -1,0 +1,164 @@
+  .hero {
+      background: url("../images/menu/hero1.png") center / cover no-repeat;
+      min-height: 335px;
+      color: var(--text-color-inverse);
+      padding-top: 100px
+  }
+
+  .hero .subheading,
+  .pagetitles {
+      text-align: center;
+
+  }
+
+  .pagetitles {
+      font-size: 95px;
+
+  }
+
+  .feature {
+      padding: 10% 3%;
+      display: flex;
+      gap: 35px;
+  }
+
+  .featurefood {
+      background-size: cover;
+      width: calc(474px * 3);
+      height: 513px;
+  }
+
+  .lobster {
+      background: url("../images/menu/featurefood1.png") center / cover no-repeat;
+  }
+
+  .choc {
+      background: url("../images/menu/featurefood2.png") center / cover no-repeat;
+  }
+
+  .duck {
+      background: url("../images/menu/featurefood3.png") center / cover no-repeat;
+  }
+
+
+
+  /* ===MENU SECTION ===*/
+
+  .maincourse,
+  .price {
+      display: flex;
+
+  }
+
+  .menupic {
+      flex: 1;
+  }
+
+  .menutext {
+      padding: 60px;
+      flex: 1;
+
+  }
+
+  .title {
+      font-size: 95px
+  }
+
+
+  .dish {
+      border-bottom: 1px solid var(--line-divider-color);
+      line-height: 2;
+  }
+
+  .price .heading {
+      font-size: 30px;
+  }
+
+  .price {
+
+      justify-content: space-between;
+      align-items: center;
+
+  }
+
+  .dishdesc {
+      width: 70%
+  }
+
+
+  /* === DESSERT === */
+
+  .dessertheader {
+      background: url("../images/menu/dessertheader.png") center / cover no-repeat;
+      min-height: 335px;
+      color: var(--text-color-inverse);
+      padding-top: 120px;
+  }
+
+  .dessert {
+      display: flex;
+      flex: row;
+      padding: 12% 8%;
+      gap: 10px;
+      margin: 10px;
+
+  }
+
+  .dessertdish {
+      flex: 1;
+      width: auto;
+
+
+  }
+
+  .dessertdish img,
+  .dessertdish .price {
+      width: 100%;
+  }
+
+  .dessertdish.top {
+      position: relative;
+      top: -100px;
+  }
+
+  .dessertdish.bottom {
+      position: relative;
+      top: 100px;
+
+  }
+
+
+  /* === BEST CROCTAILS === */
+
+  .best {
+      background: url("../images/menu/bestbg.png") center / cover no-repeat;
+      min-height: 900px;
+      color: var(--text-color-inverse);
+      padding: 200px 10%;
+  }
+
+  .besttext {
+      max-width: 450px;
+  }
+
+  .besttext .heading {
+      font-size: 90px;
+
+  }
+
+  .besttext .subheading {
+      border-bottom: 1px solid var(--line-divider-color);
+      max-width: fit-content;
+      padding-bottom: 80px;
+  }
+
+  .besttext .desc {
+      padding: 80px 0px 45px;
+  }
+
+  .besttext .viewcart {
+      width: 50%;
+      padding: 4% 2%;
+      text-align: center;
+      font-size: 15px;
+  }

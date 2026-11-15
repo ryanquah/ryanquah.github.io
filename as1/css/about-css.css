@@ -1,3 +1,13 @@
+.toptext,
+.wcentertext {
+    text-align: center;
+}
+
+.wcentertext {
+    color: var(--text-color-inverse)
+}
+
+
 .hero {
     min-height: 620px;
     padding: 155px 10% 80px;
@@ -5,12 +15,129 @@
     background: black url("../images/aboutus/aboutus-header.png") left center / 56% auto no-repeat;
 }
 
-.awards {
+.hero .heading.wcentertext {
+    font-size: 95px;
+    padding-bottom: 40px;
+}
+
+
+.herotext {
+    width: 35%;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+/*=== CULINARY PHILOSOPHY SECTION ===*/
+
+.topsection {
     display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.toppic {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+}
+
+.toptext {
+    padding: 5%
+}
+
+.toptext.heading {
+    font-size: 95px;
+}
+
+
+/*=== OUR COMMITMENT SECTION ===*/
+
+.middlesection,
+.middletext,
+.middlepics {
+    display: flex;
+}
+
+
+.middletext {
+    display: block;
+    background: var(--background-color-dark);
+    color: var(--text-color-inverse);
+    flex: 1;
+    padding: 300px 40px;
+    justify-content: center;
+}
+
+.middletext h1 {
+    font-size: 70px;
+
+}
+
+.middletext p {
+    line-height: 1.6;
+    width: 81%;
+}
+
+.middlepics {
+    flex: 2;
+}
+
+.middlepics img {
+    width: 50%;
+    object-fit: cover;
+}
+
+
+/*=== AWARDS SECTION ===*/
+
+
+.awardbg {
+    background: url("../images/aboutus/aboutus-awardbg.jpg") center / cover no-repeat;
+    min-height: 335px;
+    color: var(--text-color-inverse);
+    padding: 120px;
+}
+
+.awards,
+.awardsingle {
+    display: flex;
+}
+
+.heading.wcentertext {
+    font-size: 70PX;
+}
+
+.bodytext {
+    width: 65%;
+    margin: 50PX auto 0px;
+
+}
+
+
+.awards {
     justify-content: center;
     gap: 24px;
 }
 
+.awards .heading {
+    border-bottom: 1px solid var(--line-divider-color);
+    line-height: 2;
+    width: fit-content;
+    margin: 50PX auto;
+    font-size: 50px;
+
+}
+
+.awardsingle {
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    /* align-content can be used */
+    align-content: center;
+    gap: 5px;
+}
+
 .awards img {
-    width: 25%;
+    width: 65%;
 }

@@ -38,6 +38,8 @@
     --accent-color: #BDA16B;
     --border-color: #D3D3D3;
     --star-color: #BDA16B;
+    --line-divider-color: #D3D3D3;
+
 
 
     --font-body: "Lora", serif;
@@ -136,7 +138,41 @@ a {
     color: var(--text-color-inverse);
     gap: 24px;
     background-color: var(--background-color-dark);
+    /* -the navigation bar sticks on top of the page when scrolling */
+    position: sticky;
+    top: 0;
+    /* -higher the number it displays above elements- */
+    z-index: 20;
 }
+
+/* ==SUB-MENU== */
+
+.submenu {
+    opacity: 0;
+    /* make sub menu not visible */
+    position: absolute;
+    pointer-events: none;
+    /* make the submenu not hoverable or clickable */
+    transition: all 1.5s;
+    /* transition effect */
+    background-color: var(--background-color-dark);
+    /* background */
+}
+
+.has-submenu:hover>.submenu {
+    opacity: 1;
+    /* visible when hover menu item */
+    pointer-events: auto;
+    /* make the submenu hoverable/clickable again */
+}
+
+.submenu a {
+    display: block;
+    /* make second link to next line */
+    padding: 15px;
+}
+
+
 
 .nav .Logo {
     width: 150px;
@@ -148,6 +184,11 @@ a {
     font-size: 13px;
     cursor: pointer;
     transition: color 0.50s ease;
+}
+
+.onpage {
+    font-weight: 500;
+    color: var(--text-color-inverse)
 }
 
 .hamburger {
