@@ -210,8 +210,8 @@
     line-height: 1.6;
 }
 
-.porktext > h1,
-.porktext > p {
+.porktext>h1,
+.porktext>p {
     margin: 12px 0;
 }
 
@@ -233,6 +233,10 @@
 
 .porkbuy .addtocart {
     height: 56px;
+}
+
+.dish-p {
+    max-width: 70%;
 }
 
 .checkout {

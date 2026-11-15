@@ -147,7 +147,7 @@ a {
     color: var(--text-color-muted);
     font-size: 13px;
     cursor: pointer;
-    transition: color 0.25s ease;
+    transition: color 0.50s ease;
 }
 
 .hamburger {
