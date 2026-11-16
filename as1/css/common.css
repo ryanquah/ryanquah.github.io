@@ -129,14 +129,17 @@ a {
 
 /* === SHARED NAVIGATION & FOOTER === */
 
-.nav {
+.nav,
+.navtexts {
     display: flex;
+}
+
+.nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 24px 10%;
     color: var(--text-color-inverse);
-    gap: 24px;
     background-color: var(--background-color-dark);
     /* -the navigation bar sticks on top of the page when scrolling */
     position: sticky;
@@ -145,34 +148,10 @@ a {
     z-index: 20;
 }
 
-/* ==SUB-MENU== */
-
-.submenu {
-    opacity: 0;
-    /* make sub menu not visible */
-    position: absolute;
-    pointer-events: none;
-    /* make the submenu not hoverable or clickable */
-    transition: all 1.5s;
-    /* transition effect */
-    background-color: var(--background-color-dark);
-    /* background */
+.navtexts {
+    margin-left: auto;
+    gap: 24px;
 }
-
-.has-submenu:hover>.submenu {
-    opacity: 1;
-    /* visible when hover menu item */
-    pointer-events: auto;
-    /* make the submenu hoverable/clickable again */
-}
-
-.submenu a {
-    display: block;
-    /* make second link to next line */
-    padding: 15px;
-}
-
-
 
 .nav .Logo {
     width: 150px;
@@ -185,6 +164,7 @@ a {
     cursor: pointer;
     transition: color 0.50s ease;
 }
+
 
 .onpage {
     font-weight: 500;
@@ -199,6 +179,36 @@ a {
     color: var(--accent-color);
 }
 
+
+/* ==SUB-MENU== */
+
+.submenu {
+    opacity: 0;
+    /* make sub menu not visible */
+    position: absolute;
+    pointer-events: none;
+    /* make the submenu not hoverable or clickable */
+    transition: all 1.5s;
+    /* transition effect */
+    background-color: var(--background-color-dark);
+    /* background */
+    padding: 15px 30px;
+}
+
+.has-submenu:hover>.submenu {
+    opacity: 1;
+    /* visible when hover menu item */
+    pointer-events: auto;
+    /* make the submenu hoverable/clickable again */
+}
+
+.submenu a {
+    display: block;
+    /* make second link to next line */
+    line-height: 2;
+}
+
+/* -FOOTER- */
 
 .footer .Logo {
     width: 160px;
@@ -245,6 +255,7 @@ a {
         gap: 16px;
     }
 
+
     .navbutton {
         display: none;
     }
@@ -261,6 +272,7 @@ a {
         min-height: 260px;
         padding: 40px 20px;
     }
+
 }
 
 /* PHONE Dimension */
