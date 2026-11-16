@@ -11,8 +11,8 @@
 .hero {
     min-height: 620px;
     padding: 155px 10% 80px;
-    color: white;
-    background: black url("../images/aboutus/aboutus-header.png") left center / 56% auto no-repeat;
+    color: var(--text-color-inverse);
+    background: var(--background-color-dark) url("../images/aboutus/aboutus-header.png") left center / 56% auto no-repeat;
 }
 
 .hero .heading.wcentertext {

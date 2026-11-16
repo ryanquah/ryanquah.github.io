@@ -273,6 +273,52 @@ a {
         padding: 40px 20px;
     }
 
+    /* === TOGGLED MENU === */
+
+    .navtexts {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        background: var(--background-color-dark);
+        z-index: 1000;
+        opacity: 0;
+
+    }
+
+    .navtexts.active {
+        display: flex;
+        right: 0;
+        opacity: 1;
+    }
+
+    .navtexts a.navbutton {
+        display: block;
+        padding: 12px;
+        font-size: 22px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    #nav-toggle {
+        position: relative;
+        z-index: 1001;
+    }
+
+
+    .submenu {
+        display: none
+    }
+
 }
 
 /* PHONE Dimension */

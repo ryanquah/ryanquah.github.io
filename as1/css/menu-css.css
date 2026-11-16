@@ -26,6 +26,13 @@
       background-size: cover;
       width: calc(474px * 3);
       height: 513px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      color: var(--text-color-inverse);
+      font-family: var(--font-heading);
+      padding: 20px;
+      font-size: 30px;
   }
 
   .lobster {

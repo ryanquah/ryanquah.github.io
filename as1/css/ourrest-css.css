@@ -2,7 +2,7 @@
     min-height: 620px;
     padding: 155px 10% 80px;
     color: var(--text-color-inverse);
-    background: black url("../images/ourrest/our-header.png") right center / auto 100% no-repeat;
+    background: var(--background-color-dark) url("../images/ourrest/our-header.png") right center / auto 100% no-repeat;
 }
 
 .hero .heading {

@@ -1,6 +1,163 @@
 .hero {
     min-height: 620px;
-    padding: 155px 10% 80px;
-    color: white;
-    background: black url("../images/promotion/promotion-header.jpg") left center / 56% auto no-repeat;
+    color: var(--text-color-inverse);
+    background: var(--background-color-dark) url("../images/promotion/promotion-header.jpg") left center / 56% auto no-repeat;
+}
+
+.hero-text {
+    width: 40%;
+    margin-left: auto;
+    padding: 50px 10px
+}
+
+.hero-text .heading {
+    font-size: 90px;
+    padding: 30px 0px;
+}
+
+.desctext,
+.buytext {
+    padding: 20px 0px;
+    width: 70%;
+}
+
+
+.hero .viewcart {
+    display: inline-block;
+    width: auto;
+    padding: 8px 14px;
+    margin: 20px 0 0 0;
+}
+
+/* === SPECIALS === */
+
+.populartitle {
+    font-style: italic;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.specials {
+    text-align: center;
+}
+
+.divider {
+    width: 40px;
+    margin: 10px auto 30px;
+    border: 0;
+    border-top: 1px solid var(--line-divider-color);
+}
+
+
+.special {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.dish {
+    flex: 1;
+}
+
+.dish img {
+    margin: 0 auto;
+}
+
+
+/* === EVENING TO REMEMBER BANNER === */
+
+.romtext {
+    width: 47%;
+    margin: 0 auto
+}
+
+.romanticbanner {
+    text-align: center;
+    color: var(--text-color-inverse);
+    background: url("../images/promotion/promotion-banner.jpg") center / cover no-repeat;
+}
+
+.banner {
+    min-height: 300px;
+    padding: 60px 20px;
+}
+
+/* - COMPLIMENTARY DISHES - */
+
+.compdish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === MEMBERSHIP TIER === */
+
+.membershipbanner {
+    text-align: center;
+    color: var(--text-color-inverse);
+    background: url("../images/promotion/promotion-member.jpg") center / cover no-repeat;
+}
+
+.memberships {
+    color: var(--text-color-inverse);
+    gap: 80px;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+
+.memberships,
+.member {
+    display: flex;
+}
+
+.member,
+.perks {
+    flex: 1;
+}
+
+.memberships .heading,
+.memberships .subheading,
+.perks {
+    padding: 10px 0;
+}
+
+
+.memberships .heading {
+    font-size: 30px;
+}
+
+
+.perks {
+    line-height: 3;
+    text-align: left;
+}
+
+.member {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+}
+
+.member .viewcart {
+    margin-top: auto;
+    margin: 20px 0;
+    width: 190px;
+    align-self: center;
+    padding: 8px 0px;
+}
+
+.classic {
+    background: url("../images/promotion/promotion-member1.jpg") center / cover no-repeat;
+}
+
+.prestige {
+    background: url("../images/promotion/promotion-member2.jpg") center / cover no-repeat;
+}
+
+.elite {
+    background: url("../images/promotion/promotion-member3.jpg") center / cover no-repeat;
 }

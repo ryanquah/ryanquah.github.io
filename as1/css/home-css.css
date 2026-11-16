@@ -1,8 +1,8 @@
 .hero {
     min-height: 620px;
     padding: 155px 10% 80px;
-    color: white;
-    background: black url("../images/home/home-header.jpg") right center / 56% auto no-repeat;
+    color: var(--text-color-inverse);
+    background: var(--background-color-dark) url("../images/home/home-header.jpg") right center / 56% auto no-repeat;
 }
 
 .hero .heading {
@@ -21,13 +21,13 @@
     width: 40px;
     margin: 10px auto 30px;
     border: 0;
-    border-top: 1px solid #d3d3d3;
+    border-top: 1px solid var(--line-divider-color);
 }
 
 .popular {
     padding: 60px 20px 30px;
     text-align: center;
-    background: white;
+    background: var(--background-color);
 
 
 }
