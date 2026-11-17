@@ -38,7 +38,16 @@
 
 
     <div class="hero">
-        <h2 class="subheading wcentertext herotext"> OUR STORY </h2>
+        <picture class="hero-mobile-image">
+            <source media="(max-width: 640px)" srcset="images/aboutus/aboutus-headerphone.png">
+            <img src="images/aboutus/aboutus-headeripad.png" alt="Chefs preparing food">
+        </picture>
+
+        <div class="about-story-title">
+            <div class="about-title-line"></div>
+            <h2 class="subheading wcentertext herotext"> OUR STORY </h2>
+            <div class="about-title-line"></div>
+        </div>
         <h1 class="heading wcentertext herotext"> ABOUT US</h1>
         <p class="wcentertext herotext"> At ROMALIYA, we believe exceptional dining begins with the finest ingredients
             and a passion for culinary
@@ -50,8 +59,10 @@
         <h1 class="heading toptext">Culinary Philosophy</h1>
 
         <div class="topsection">
-            <img src="images/aboutus/aboutus-middle1.png" alt="Culinary Philosophy Pic" class="toppic">
-            <img src="images/aboutus/aboutus-middle2.png" alt="Culinary Philosophy Pic" class="toppic">
+            <div><img src="images/aboutus/aboutus-middle1.png" alt="Culinary Philosophy Pic" class="toppic"></div>
+            <div class="removepic"> <img src="images/aboutus/aboutus-middle2.png" alt="Culinary Philosophy Pic"
+                    class="toppic">
+            </div>
         </div>
 
         <p class="toptext">At the heart of our kitchen is a deep reverence for nature. We believe that true culinary
@@ -118,7 +129,7 @@
     </div>
 
 
-    /* === JAVASCRIPT === */
+
 
     <script src="js/nav.js"></script>
 

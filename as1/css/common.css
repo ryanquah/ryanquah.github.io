@@ -17,6 +17,7 @@
     --text-color-inverse: #ffffff;
     --text-color-muted: #a1a1a1;
     --text-color-subtle: #777777;
+    --text-color-shadow: rgba(0, 0, 0, 0.7);
 
     /* Background colors */
     --background-color: #ffffff;
@@ -29,6 +30,7 @@
     --button-background-color: var(--accent-color);
     --button-background-color-hover: #fad58b;
     --button-background-color-dark: #000000;
+    --button-background-color-dark-transparent: #000000de;
     --button-text-color: #ffffff;
     --button-text-color-dark: #000000;
     --button-outline-color: #000000;
@@ -276,15 +278,16 @@ a {
     /* === TOGGLED MENU === */
 
     .navtexts {
-        position: absolute;
+        position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         width: 75%;
         height: 100vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         transition: all 0.3s ease;
+        transform: translateX(100%);
         background: var(--background-color-dark);
         z-index: 1000;
         opacity: 0;
@@ -293,7 +296,7 @@ a {
 
     .navtexts.active {
         display: flex;
-        right: 0;
+        transform: translateX(0);
         opacity: 1;
     }
 

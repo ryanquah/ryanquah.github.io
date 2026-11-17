@@ -39,6 +39,7 @@
 
 .specials {
     text-align: center;
+    padding: 30px 0px;
 }
 
 .divider {
@@ -54,6 +55,7 @@
     justify-content: center;
     align-content: center;
     text-align: center;
+    padding: 30px 0px;
 }
 
 .dish {
@@ -64,6 +66,20 @@
     margin: 0 auto;
 }
 
+.dish .text {
+    width: 85%;
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.learnmore {
+    display: inline-block;
+    width: auto;
+    padding: 5px 30px;
+    margin: 20px 0 0 0;
+    color: var(--text-color)
+}
 
 /* === EVENING TO REMEMBER BANNER === */
 
@@ -81,14 +97,97 @@
 .banner {
     min-height: 300px;
     padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner .romtext {
+    width: 70%;
+    max-width: 700px;
 }
 
 /* - COMPLIMENTARY DISHES - */
 
+
 .compdish {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 30px;
+    position: relative;
+    margin-bottom: -80px;
+    /* pulls the next row up to overlap */
+}
+
+
+.compdish .heading {
+    flex: 1;
+    text-align: center;
+    width: auto;
+    min-width: 0;
+    font-size: 30px;
+
+}
+
+.complimentary {
+    padding: 50px 130px;
+    margin: 0 auto;
+}
+
+
+
+.compdish img {
+    width: 70%;
+}
+
+.rom1 {
+    width: 80%;
+    margin-left: 5%;
+    z-index: 2;
+}
+
+.rom2 {
+    width: 70%;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.rom3 {
+    width: 65%;
+    margin-left: 20%;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+
+.reserve-prompt {
+    padding: 24px 10px;
+    text-align: center;
+}
+
+.reserve-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.reserve-title .title-line {
+    width: 20px;
+    border-bottom: 1px solid currentColor;
+}
+
+.reserve-prompt .button-whiteoutline {
+    display: inline-block;
+    padding: 8px 20px;
+    color: var(--text-color)
+}
+
+.phone-image {
+    display: none;
 }
 
 /* === MEMBERSHIP TIER === */
@@ -131,6 +230,18 @@
 }
 
 
+.perks p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.perk-star {
+    width: 12px;
+    height: 12px;
+    flex: none;
+}
+
 .perks {
     line-height: 3;
     text-align: left;
@@ -160,4 +271,134 @@
 
 .elite {
     background: url("../images/promotion/promotion-member3.jpg") center / cover no-repeat;
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 55vw 0 0;
+        background-size: 100% auto;
+        background-position: top center;
+    }
+
+    .hero-text {
+        width: 100%;
+        margin: 0;
+        padding: 24px 8% 32px;
+        background: var(--background-color-dark);
+    }
+
+    .hero-text .heading {
+        font-size: 52px;
+    }
+
+    .desctext,
+    .buytext {
+        width: 100%;
+    }
+
+    .special {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .dish {
+        flex: none;
+    }
+
+    .dish img {
+        width: 70%;
+
+    }
+
+    .compdish {
+        position: static;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 auto 30px;
+        width: 100%;
+    }
+
+    .rom1,
+    .rom2,
+    .rom3 {
+        width: 100%;
+        margin: 0 auto 32px;
+    }
+
+    .compdish img {
+        width: 70%;
+    }
+
+    .compdish .heading {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .memberships {
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .member {
+        flex: 0 1 calc(50% - 10px);
+    }
+
+    .romtext {
+        width: 90%;
+    }
+}
+
+/* Phone */
+@media (max-width: 640px) {
+    .hero {
+        padding-top: 55vw;
+    }
+
+    .hero-text .heading {
+        font-size: 40px;
+    }
+
+    .member {
+        flex-basis: 100%;
+    }
+
+    .compdish {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 auto 30px;
+        width: 100%;
+    }
+
+    .compdish-image {
+        display: block;
+        width: 80%;
+    }
+
+    .compdish-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .compdish .heading {
+        width: 80%;
+        font-size: 16px;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    .compdish .desktop-image {
+        display: none;
+    }
+
+    .compdish .phone-image {
+        display: block;
+        width: 80%;
+        height: auto;
+    }
 }
