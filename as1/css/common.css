@@ -233,7 +233,7 @@ a {
     color: var(--text-color-inverse);
     background:
         linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-        url("../images/home/home-footer.png") center / cover no-repeat;
+        url("../images/Home/home-footer.png") center / cover no-repeat;
 }
 
 .socials {

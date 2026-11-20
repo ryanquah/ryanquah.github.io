@@ -2,7 +2,7 @@
     min-height: 620px;
     padding: 155px 10% 80px;
     color: var(--text-color-inverse);
-    background: var(--background-color-dark) url("../images/home/home-header.jpg") right center / 56% auto no-repeat;
+    background: var(--background-color-dark) url("../images/Home/home-header.jpg") right center / 56% auto no-repeat;
 }
 
 .hero .heading {
@@ -91,7 +91,7 @@
 .atmosphere {
     background:
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../images/home/home-banner.jpg") center / cover no-repeat;
+        url("../images/Home/home-banner.jpg") center / cover no-repeat;
     color: var(--text-color-inverse);
     min-height: 500px;
     padding: 110px 10%;

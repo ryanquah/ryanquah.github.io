@@ -225,7 +225,7 @@
           font-size: 55px;
       }
 
-      .dessert > .dessertdish {
+      .dessert>.dessertdish {
           display: none;
       }
 
